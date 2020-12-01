@@ -1,0 +1,17 @@
+C:\UIT\AI\Final\Final\bin\Debug\Final.exe.config
+C:\UIT\AI\Final\Final\bin\Debug\Final.exe
+C:\UIT\AI\Final\Final\bin\Debug\Final.pdb
+C:\UIT\AI\Final\Final\obj\Debug\Final.csprojAssemblyReference.cache
+C:\UIT\AI\Final\Final\obj\Debug\Final.Form1.resources
+C:\UIT\AI\Final\Final\obj\Debug\Final.Properties.Resources.resources
+C:\UIT\AI\Final\Final\obj\Debug\Final.csproj.GenerateResource.cache
+C:\UIT\AI\Final\Final\obj\Debug\Final.csproj.CoreCompileInputs.cache
+C:\UIT\AI\Final\Final\obj\Debug\Final.exe
+C:\UIT\AI\Final\Final\obj\Debug\Final.pdb
+C:\UIT\AI\Final\Final\bin\Debug\nunit.framework.dll
+C:\UIT\AI\Final\Final\bin\Debug\SwiPlCs.dll
+C:\UIT\AI\Final\Final\bin\Debug\SwiPlCs.xml
+C:\UIT\AI\Final\Final\obj\Debug\Final.FormHistory.resources
+C:\UIT\AI\Final\Final\obj\Debug\Final.FormQuestion.resources
+C:\UIT\AI\Final\Final\obj\Debug\Final.FormResult.resources
+C:\UIT\AI\Final\Final\obj\Debug\Final.csproj.CopyComplete
