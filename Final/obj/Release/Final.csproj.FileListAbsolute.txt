@@ -1,0 +1,17 @@
+C:\UIT\AI\Final\Final\bin\Release\Final.exe.config
+C:\UIT\AI\Final\Final\bin\Release\Final.exe
+C:\UIT\AI\Final\Final\bin\Release\Final.pdb
+C:\UIT\AI\Final\Final\bin\Release\nunit.framework.dll
+C:\UIT\AI\Final\Final\bin\Release\SwiPlCs.dll
+C:\UIT\AI\Final\Final\bin\Release\SwiPlCs.xml
+C:\UIT\AI\Final\Final\obj\Release\Final.csprojAssemblyReference.cache
+C:\UIT\AI\Final\Final\obj\Release\Final.Form1.resources
+C:\UIT\AI\Final\Final\obj\Release\Final.FormHistory.resources
+C:\UIT\AI\Final\Final\obj\Release\Final.FormQuestion.resources
+C:\UIT\AI\Final\Final\obj\Release\Final.FormResult.resources
+C:\UIT\AI\Final\Final\obj\Release\Final.Properties.Resources.resources
+C:\UIT\AI\Final\Final\obj\Release\Final.csproj.GenerateResource.cache
+C:\UIT\AI\Final\Final\obj\Release\Final.csproj.CoreCompileInputs.cache
+C:\UIT\AI\Final\Final\obj\Release\Final.csproj.CopyComplete
+C:\UIT\AI\Final\Final\obj\Release\Final.exe
+C:\UIT\AI\Final\Final\obj\Release\Final.pdb
