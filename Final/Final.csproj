@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91D56824-EB2E-4418-B858-946F8EDB6E80}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Final</RootNamespace>
+    <AssemblyName>Final</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\Test_Hechuyengia\Test_Hechuyengia\bin\Debug\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="SwiPlCs">
+      <HintPath>..\..\Test_Hechuyengia\Test_Hechuyengia\bin\Debug\SwiPlCs.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHistory.Designer.cs">
+      <DependentUpon>FormHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuestion.Designer.cs">
+      <DependentUpon>FormQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResult.Designer.cs">
+      <DependentUpon>FormResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVariable.cs" />
+    <Compile Include="MyAnswer.cs" />
+    <Compile Include="MyProlog.cs" />
+    <Compile Include="MyQuestion.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHistory.resx">
+      <DependentUpon>FormHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuestion.resx">
+      <DependentUpon>FormQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResult.resx">
+      <DependentUpon>FormResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Laptop.pl" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\logo1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RecourcesImage\Acer\Acer 1.jpg" />
+    <Content Include="RecourcesImage\Acer\Acer 2.jpg" />
+    <Content Include="RecourcesImage\Acer\Acer Apire A315 54 34U1.png" />
+    <Content Include="RecourcesImage\Acer\Acer Aspire 1.png" />
+    <Content Include="RecourcesImage\Acer\Acer Aspire 2.png" />
+    <Content Include="RecourcesImage\Acer\Acer Aspire 3.png" />
+    <Content Include="RecourcesImage\Acer\Acer Aspire 4.png" />
+    <Content Include="RecourcesImage\Acer\Acer Aspire.png" />
+    <Content Include="RecourcesImage\Acer\Acer Nitro 1.png" />
+    <Content Include="RecourcesImage\Acer\Acer Nitro.png" />
+    <Content Include="RecourcesImage\Acer\Acer Swift 1.png" />
+    <Content Include="RecourcesImage\Acer\Acer Swift 2.png" />
+    <Content Include="RecourcesImage\Acer\Acer Swift 3.png" />
+    <Content Include="RecourcesImage\Acer\Acer Swift 4.png" />
+    <Content Include="RecourcesImage\Acer\Acer Swift.png" />
+    <Content Include="RecourcesImage\Acer\Acer.jpg" />
+    <Content Include="RecourcesImage\Asus\10038127_asus-i5-8250u-15-6inch-x507uf-ej078t-1.jpg" />
+    <Content Include="RecourcesImage\Asus\10041607-asus-ryzen-5-2500u-15-6-inch-x505za-ej505t-1.jpg" />
+    <Content Include="RecourcesImage\Asus\10041690-asus-i3-8145u-14-inch-a412fa-ek-155t-bac-1.jpg" />
+    <Content Include="RecourcesImage\Asus\10042835_mtxt-asus-vivobook-i3-8145u-a512fa-ej099t-1.jpg" />
+    <Content Include="RecourcesImage\Asus\10043848-asus-i3-8145u-15-6-inch-a512fa_ej1170t-1.jpg" />
+    <Content Include="RecourcesImage\Asus\10043849_MTXT_ASUS_X509FA-EJ201T-I5-4-1-W10_01_mpf3-32.jpg" />
+    <Content Include="RecourcesImage\Asus\10044376-asus-x509ua-i3-7020u-15-6-inch-ej116t-1_h4h2-wz.jpg" />
+    <Content Include="RecourcesImage\Asus\10044377-asus-vivobook-x509fj-i5-8265u-15-6-inch-ej153t-1.jpg" />
+    <Content Include="RecourcesImage\Asus\10045072-asus-a412fa-i5-14-inch-10210u-ek734t-1.jpg" />
+    <Content Include="RecourcesImage\Asus\10046035-asus-a412da-r5-3500u-14-inch-ek144t-1.jpg" />
+    <Content Include="RecourcesImage\Asus\10046568-asus-vivobook-14-a412fa-i3-10110u-14-inch-ek1188t-1.jpg" />
+    <Content Include="RecourcesImage\Asus\10046569-asus-vivobook-15-a512fa-i3-10110u-15-6-inch-ej2006t-1.jpg" />
+    <Content Include="RecourcesImage\Asus\Asus A412FA-EK740T.png" />
+    <Content Include="RecourcesImage\Asus\Asus D409DA EK151T.jpg" />
+    <Content Include="RecourcesImage\Asus\Asus D570DD-E4027T.png" />
+    <Content Include="RecourcesImage\Asus\Asus TUF 1.png" />
+    <Content Include="RecourcesImage\Asus\Asus TUF 2.png" />
+    <Content Include="RecourcesImage\Asus\Asus TUF.png" />
+    <Content Include="RecourcesImage\Asus\Asus Vivobook 1.png" />
+    <Content Include="RecourcesImage\Asus\Asus Vivobook.png" />
+    <Content Include="RecourcesImage\Dell\Dell 1.jpg" />
+    <Content Include="RecourcesImage\Dell\Dell 2.jpg" />
+    <Content Include="RecourcesImage\Dell\Dell 3.jpg" />
+    <Content Include="RecourcesImage\Dell\Dell 4.jpg" />
+    <Content Include="RecourcesImage\Dell\Dell Inspiron 1.png" />
+    <Content Include="RecourcesImage\Dell\Dell Inspiron 2.png" />
+    <Content Include="RecourcesImage\Dell\Dell Inspiron 3.png" />
+    <Content Include="RecourcesImage\Dell\Dell Inspiron 4.png" />
+    <Content Include="RecourcesImage\Dell\Dell Inspiron.png" />
+    <Content Include="RecourcesImage\Dell\Dell V3590.png" />
+    <Content Include="RecourcesImage\Dell\Dell Vostro 1.png" />
+    <Content Include="RecourcesImage\Dell\Dell Vostro 2.png" />
+    <Content Include="RecourcesImage\Dell\Dell Vostro 3.png" />
+    <Content Include="RecourcesImage\Dell\Dell Vostro 4.png" />
+    <Content Include="RecourcesImage\Dell\Dell Vostro.png" />
+    <Content Include="RecourcesImage\Dell\Dell.png" />
+    <Content Include="RecourcesImage\HP\HP 1.jpg" />
+    <Content Include="RecourcesImage\HP\HP 10.jpg" />
+    <Content Include="RecourcesImage\HP\HP 11.jpg" />
+    <Content Include="RecourcesImage\HP\HP 2.jpg" />
+    <Content Include="RecourcesImage\HP\HP 3.jpg" />
+    <Content Include="RecourcesImage\HP\HP 4.jpg" />
+    <Content Include="RecourcesImage\HP\HP 5.jpg" />
+    <Content Include="RecourcesImage\HP\HP 6.jpg" />
+    <Content Include="RecourcesImage\HP\HP 7.jpg" />
+    <Content Include="RecourcesImage\HP\HP 8.jpg" />
+    <Content Include="RecourcesImage\HP\HP 9.jpg" />
+    <Content Include="RecourcesImage\HP\HP Pavilion 1.jpg" />
+    <Content Include="RecourcesImage\HP\HP Pavilion x360.png" />
+    <Content Include="RecourcesImage\HP\HP Pavilion.png" />
+    <Content Include="RecourcesImage\HP\HP Probook.png" />
+    <Content Include="RecourcesImage\HP\HP.png" />
+    <Content Include="RecourcesImage\Lenovo\Lenovo 1.jpg" />
+    <Content Include="RecourcesImage\Lenovo\Lenovo 2.jpg" />
+    <Content Include="RecourcesImage\Lenovo\Lenovo 3.jpg" />
+    <Content Include="RecourcesImage\Lenovo\Lenovo 4.jpg" />
+    <Content Include="RecourcesImage\Lenovo\Lenovo 5.jpg" />
+    <Content Include="RecourcesImage\Lenovo\Lenovo Ideapad 1.png" />
+    <Content Include="RecourcesImage\Lenovo\Lenovo Ideapad 2.png" />
+    <Content Include="RecourcesImage\Lenovo\Lenovo Ideapad 3.png" />
+    <Content Include="RecourcesImage\Lenovo\Lenovo Ideapad 4.png" />
+    <Content Include="RecourcesImage\Lenovo\Lenovo Ideapad.png" />
+    <Content Include="RecourcesImage\Lenovo\Lenovo Legion.png" />
+    <Content Include="RecourcesImage\Lenovo\Lenovo.jpg" />
+    <Content Include="RecourcesImage\Macbook\Macbook Air 1.png" />
+    <Content Include="RecourcesImage\Macbook\Macbook Air 2.jpg" />
+    <Content Include="RecourcesImage\Macbook\Macbook Air 3.jpg" />
+    <Content Include="RecourcesImage\Macbook\Macbook Air 4.jpg" />
+    <Content Include="RecourcesImage\Macbook\Macbook Air.png" />
+    <Content Include="RecourcesImage\Macbook\Macbook Pro 1.png" />
+    <Content Include="RecourcesImage\Macbook\Macbook Pro 2.png" />
+    <Content Include="RecourcesImage\Macbook\Macbook Pro 3.jpg" />
+    <Content Include="RecourcesImage\Macbook\Macbook Pro.png" />
+    <Content Include="RecourcesImage\MSI\MSI 1.png" />
+    <Content Include="RecourcesImage\MSI\MSI 2.png" />
+    <Content Include="RecourcesImage\MSI\MSI 3.png" />
+    <Content Include="RecourcesImage\MSI\MSI 4.jpg" />
+    <Content Include="RecourcesImage\MSI\MSI 5.jpg" />
+    <Content Include="RecourcesImage\MSI\MSI.png" />
+    <Content Include="RecourcesImage\not-found-image-15383864787lu.jpg" />
+    <Content Include="RecourcesImage\notfound.png" />
+    <Content Include="Resources\adventure_30px.png" />
+    <Content Include="Resources\adventure_32px.png" />
+    <Content Include="Resources\adventure_50px.png" />
+    <Content Include="Resources\back.png" />
+    <Content Include="Resources\btnBack.png" />
+    <Content Include="Resources\btnNext.png" />
+    <Content Include="Resources\btnNext1.png" />
+    <Content Include="Resources\btnReset_image.png" />
+    <Content Include="Resources\bulleted_list_64px.png" />
+    <Content Include="Resources\exit_30px.png" />
+    <Content Include="Resources\faq_100px.png" />
+    <Content Include="Resources\faq_30px.png" />
+    <Content Include="Resources\icons8_laptop.ico" />
+    <Content Include="Resources\icons8_laptop_16.png" />
+    <Content Include="Resources\icons8_laptop_32.png" />
+    <Content Include="Resources\laptop100px.png" />
+    <Content Include="Resources\laptop_100px.png" />
+    <Content Include="Resources\laptop_48px.png" />
+    <Content Include="Resources\laptop_50px.png" />
+    <Content Include="Resources\laptop_64px.png" />
+    <Content Include="Resources\left_64px.png" />
+    <Content Include="Resources\lightbulb.ico" />
+    <Content Include="Resources\lightbulb.png" />
+    <Content Include="Resources\list_100px.png" />
+    <Content Include="Resources\list_30px.png" />
+    <Content Include="Resources\list_64px.png" />
+    <Content Include="Resources\logo.png" />
+    <Content Include="Resources\multiply_16px.png" />
+    <Content Include="Resources\multiply_50px.png" />
+    <Content Include="Resources\next.png" />
+    <Content Include="Resources\questions_64px.png" />
+    <Content Include="Resources\reset.png" />
+    <Content Include="Resources\right_64px.png" />
+    <Content Include="Resources\uit.ico" />
+    <Content Include="Resources\uit.png" />
+    <Content Include="Resources\waypoint_map_64px.png" />
+    <Content Include="Resources\wish_list_50px.png" />
+    <Content Include="Resources\z1965763828461_01357ed419c7a73e55e63479e93f76d4.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
